@@ -30,6 +30,12 @@ bin/
 
 ### Claude ###
 CLAUDE.md
+
+### 면접 준비 개인 파일 ###
+notes/english-reading.md
+notes/english-speaking.md
+notes/recap-log.md
+notes/review-deck.md
 ### IDE/로컬 설정 ###
 .idea/
 *.iml
