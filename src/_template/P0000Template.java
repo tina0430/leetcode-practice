@@ -7,6 +7,9 @@ import java.util.Arrays;
  * https://leetcode.com/problems/xxx/
  * 난이도: Easy | 유형: -
  *
+ * 기록:
+ * - 첫 풀이: YYYY-MM-DD
+ *
  * 접근:
  * 1. 입출력 정의:
  * 2. 제약 조건:
