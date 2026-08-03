@@ -1,6 +1,6 @@
 # leetcode-practice
 
-미국 취업 준비를 위한 LeetCode 풀이 저장소 (Java 21, IntelliJ).
+취업 준비를 위한 LeetCode 풀이 저장소 (Java 21, IntelliJ).
 
 ## 구조
 
