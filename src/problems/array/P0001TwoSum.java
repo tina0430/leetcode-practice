@@ -1,9 +1,8 @@
-package array;
+package problems.array;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Stream;
 
 /**
  * 1. Two Sum

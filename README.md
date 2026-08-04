@@ -6,25 +6,33 @@
 
 ```
 src/
-  _template/   문제 풀이 템플릿 (복사해서 시작)
+  problems/    풀이 (제출하는 코드)
+    inbox/     새로 받은 문제 (풀리면 유형 패키지로 이동)
+    array/     유형별 패키지 (hashmap, string, twopointers, slidingwindow,
+    dp/        stack, binarysearch, linkedlist, tree, heap, backtracking,
+    ...        graph, greedy, intervals)
+  lab/         학습 실험 코드 (제출하지 않고 눈으로 확인하는 코드)
   common/      ListNode, TreeNode 등 공용 자료구조
-  array/       유형별 패키지 (string, hashmap, twopointers,
-  dp/          slidingwindow, stack, binarysearch, linkedlist,
-  ...          tree, heap, backtracking, graph, greedy, intervals)
+  _template/   문제 풀이 템플릿
+tools/         glue code (스켈레톤 생성기 등)
 notes/         일일 공부 기록 (notes/YYYY-MM-DD.md, TEMPLATE.md 참고)
 ```
 
 ## 문제 추가 방법
 
-1. `src/_template/P0000Template.java`를 해당 유형 패키지로 복사
-2. 클래스명은 `P<문제번호 4자리><문제명>` — 예: `P0001TwoSum`
-3. `main()`에 예제 테스트케이스를 넣고 IntelliJ에서 ▶ 실행으로 확인
+```sh
+python3 tools/skeleton.py <slug 또는 문제 URL>
+```
+
+LeetCode에서 시그니처와 예제를 받아 `src/problems/inbox/`에 6단계 템플릿 파일을 만든다.
+수동으로 만들 때는 `src/_template/P0000Template.java`를 복사한다.
+클래스명은 `P<문제번호 4자리><문제명>` — 예: `P0001TwoSum`.
 
 터미널에서 실행하려면:
 
 ```sh
-javac -d out src/common/*.java src/array/P0001TwoSum.java
-java -cp out array.P0001TwoSum
+javac -d out src/common/*.java src/problems/array/P0001TwoSum.java
+java -cp out problems.array.P0001TwoSum
 ```
 
 ## 기록

@@ -1,4 +1,4 @@
-package hashmap;
+package problems.hashmap;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,7 +11,7 @@ import java.util.Map;
  * 난이도: Medium | 유형: String, Hash Map (그룹핑)
  *
  * 접근:
- * 1. 입출력 정의: string 배열 strs > anagrams 끼리 묶어서 리스트로 반환
+ * 1. 입출력 정의: practice.string 배열 strs > anagrams 끼리 묶어서 리스트로 반환
  * 2. 제약 조건:
  *   - strs 는 최대 10K, 각 문자열은 최대 100, 알파벳 소문자로 구성됨
  *   - 문자열을 각각 정리하면 (100 * 10K) 1000K > 2^8 이랑 같은 단위, 1초 아슬아슬하네?

@@ -1,4 +1,4 @@
-package _template;
+package lab;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package hashmap;
+package problems.hashmap;
 
 /**
  * 242. Valid Anagram (복습 1회차)
