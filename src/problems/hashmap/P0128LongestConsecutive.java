@@ -45,12 +45,13 @@ public class P0128LongestConsecutive {
         int max = 0;
         for (int num : numSet) {
             if (!numSet.contains(num - 1)) {
-                int count = 1;
-                while (numSet.contains(num + 1)) {
-                    count++;
+                int end = num + 1;
+                while (numSet.contains(end)) {
+                    end++;
                 }
-                if (count > max) {
-                    max = count;
+                int gap = end - num;
+                if (gap > max) {
+                    max = gap;
                 }
             }
         }
