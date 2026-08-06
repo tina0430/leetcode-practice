@@ -6,7 +6,7 @@ package problems.hashmap;
  * 난이도: Easy | 유형: String, Hash Map (카운팅)
  *
  * 접근:
- * 1. 입출력 정의: practice.string s,t > t가 s의 anagram 이면 true 아님 false / anagram 이 뭐지? 순서만 바꾼 문자열인가?
+ * 1. 입출력 정의: String s,t > t가 s의 anagram 이면 true 아님 false / anagram 이 뭐지? 순서만 바꾼 문자열인가?
  * 2. 제약 조건: s,t 각각 50k 길이, 알파벳 소문자로 이루어져있음 > 26칸만 쓰면 된다는 뜻
  * 3. 예제 손으로 + 함정 찾기: 일단 t에서 각 알파벳 별 갯수 세고, s 에서 나온 알파벳이 t 맵에 없으면 바로 false, 그외 경우 일단 끝까지 가긴 하고 갯수 비교해야 할듯
  * 4. 브루트포스 + 복잡도: 브루트포스로 어떻게 풀어야 할지도 모르겠음. 일단 O(n)으로 풀 수 있을 듯? (s, t 각각 한번씩 순회)

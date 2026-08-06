@@ -75,6 +75,24 @@ def java_method(snippets: list) -> str:
     return "\n".join(lines)
 
 
+def common_imports(method: str) -> str:
+    """시그니처가 공용 타입을 쓰면 import와 사용법 안내를 붙인다.
+
+    common.ListNode / common.TreeNode에는 of(...)와 toString()이 이미 있다.
+    이걸 모르면 학습자가 헬퍼를 다시 만드느라 풀이 시간을 쓴다 (08-05 사고).
+    """
+    used = [t for t in ("ListNode", "TreeNode") if re.search(rf"\b{t}\b", method)]
+    if not used:
+        return ""
+    lines = [f"import common.{t};" for t in used]
+    helpers = ", ".join(f"{t}.of(...)" for t in used)
+    lines.append("")
+    lines.append(f"// 로컬 테스트 헬퍼: {helpers}로 만들고, toString()이 [1, 2, 3] 형태로 찍는다.")
+    lines.append("// 리트코드 제출 시: import를 지우고 class Solution 안의 메서드만 붙여넣는다")
+    lines.append("// (채점기가 자기 ListNode/TreeNode를 이미 갖고 있어서, 같은 이름을 또 정의하면 타입 충돌).")
+    return "\n".join(lines) + "\n\n"
+
+
 def build_file(q: dict, today: str) -> tuple[str, str]:
     num = int(q["questionFrontendId"])
     cls = f"P{num:04d}{pascal_title(q['title'])}"
@@ -83,6 +101,8 @@ def build_file(q: dict, today: str) -> tuple[str, str]:
     )
     method = java_method(q["codeSnippets"])
     src = f"""package problems.inbox;
+
+{common_imports(method)}\
 
 /**
  * {num}. {q['title']}
@@ -113,7 +133,7 @@ public class {cls} {{
     }}
 }}
 """
-    return cls, src
+    return cls, re.sub(r"\n{3,}", "\n\n", src)
 
 
 def main() -> None:

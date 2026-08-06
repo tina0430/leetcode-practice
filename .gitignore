@@ -40,3 +40,6 @@ notes/review-deck.md
 .idea/
 *.iml
 .claude/
+
+# IntelliJ 인덱스 파일
+identifier.sqlite

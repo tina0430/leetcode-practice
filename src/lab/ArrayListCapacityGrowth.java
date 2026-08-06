@@ -10,7 +10,7 @@ import java.util.List;
  *
  * 실행 (모듈 봉인 해제 플래그 필요):
  *   javac -d out src/_template/CapacityGrowth.java
- *   java --add-opens java.base/java.util=ALL-UNNAMED -cp out lab.CapacityGrowth
+ *   java --add-opens java.base/java.util=ALL-UNNAMED -cp out lab.ArrayListCapacityGrowth
  */
 public class ArrayListCapacityGrowth {
 
