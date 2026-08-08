@@ -36,6 +36,7 @@ notes/english-reading.md
 notes/english-speaking.md
 notes/recap-log.md
 notes/review-deck.md
+notes/*-speaking-review.md
 ### IDE/로컬 설정 ###
 .idea/
 *.iml
