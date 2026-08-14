@@ -2,9 +2,6 @@ package problems.linkedlist;
 
 import common.ListNode;
 
-import java.util.ArrayList;
-import java.util.List;
-
 // 로컬 테스트 헬퍼: ListNode.of(...)로 만들고, toString()이 [1, 2, 3] 형태로 찍는다.
 // 리트코드 제출 시: import를 지우고 class Solution 안의 메서드만 붙여넣는다
 // (채점기가 자기 ListNode/TreeNode를 이미 갖고 있어서, 같은 이름을 또 정의하면 타입 충돌).
@@ -38,32 +35,29 @@ import java.util.List;
  *      중간 값 삭제
  *      길이가 1인 경우
  *
- * 시간복잡도: O(n) / 공간복잡도: O(n)
+ * 시간복잡도: O(n) / 공간복잡도: O(1)
  */
 public class P0019RemoveNthNodeFromEndOfList {
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        List<ListNode> nodes = new ArrayList<>();
-        nodes.add(head);
-        ListNode cur = head;
+        ListNode dummy = new ListNode(0, head);
+        ListNode cur = dummy;
+        ListNode target = dummy;
         while (cur != null) {
             cur = cur.next;
-            nodes.add(cur);
+            if (n < 0) {
+                target = target.next;
+            }
+            n--;
         }
-        if (nodes.size() == n + 1) { // 첫 노드 삭제
-            head = head.next;
-        } else { // 그 외
-            int len = nodes.size() - 1;   // 센티넬 뺀 실제 길이
-            int target = len - n;         // 지울 노드의 인덱스
-            nodes.get(target - 1).next = nodes.get(target + 1);
-        }
-        return head;
+        target.next = target.next.next;
+        return dummy.next;
     }
 
     public static void main(String[] args) {
         P0019RemoveNthNodeFromEndOfList s = new P0019RemoveNthNodeFromEndOfList();
 
-        System.out.println(s.removeNthFromEnd(ListNode.of(1, 2, 3, 4, 5), 2));  // [1, 2, 3, 5]
+//        System.out.println(s.removeNthFromEnd(ListNode.of(1, 2, 3, 4, 5), 2));  // [1, 2, 3, 5]
         System.out.println(s.removeNthFromEnd(ListNode.of(1), 1));              // []
         System.out.println(s.removeNthFromEnd(ListNode.of(1, 2), 1));           // [1]
 
