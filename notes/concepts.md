@@ -479,6 +479,7 @@ for (int i = 0; i < n; i++) {
 | 19 | Remove Nth Node From End | 링크드 리스트, 간격 고정 두 포인터 (08-13 재작성) | 08-07 |
 | 20 | Valid Parentheses | 스택, 짝 맞추기 (기대값을 미리 push) | 08-13 |
 | 155 | Min Stack | 스택 설계, 보조 스택으로 최솟값 동행 저장 | 08-13 |
+| 125 | Valid Palindrome | 투 포인터 (양끝에서 좁히기), 문자열 정규화 | 08-14 |
 | 21 | Merge Two Sorted Lists | 링크드 리스트, 병합 | 08-05 |
 | 2 | Add Two Numbers | 링크드 리스트, 자릿수 덧셈과 캐리 | 08-05 |
 
