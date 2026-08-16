@@ -480,6 +480,7 @@ for (int i = 0; i < n; i++) {
 | 20 | Valid Parentheses | 스택, 짝 맞추기 (기대값을 미리 push) | 08-13 |
 | 155 | Min Stack | 스택 설계, 보조 스택으로 최솟값 동행 저장 | 08-13 |
 | 125 | Valid Palindrome | 투 포인터 (양끝에서 좁히기), 문자열 정규화 | 08-14 |
+| 11 | Container With Most Water | 값을 키로 쓴 경계 인덱스 사전 계산 (TLE 1회 후 O(n+m)) | 08-15 |
 | 21 | Merge Two Sorted Lists | 링크드 리스트, 병합 | 08-05 |
 | 2 | Add Two Numbers | 링크드 리스트, 자릿수 덧셈과 캐리 | 08-05 |
 
