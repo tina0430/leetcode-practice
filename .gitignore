@@ -37,6 +37,9 @@ notes/english-speaking.md
 notes/recap-log.md
 notes/review-deck.md
 notes/*-speaking-review.md
+### 학습 설계 문서 (답이 들어 있거나 실패 이력이 근거인 것) ###
+notes/memorize-sheet.md
+notes/module-*.md
 ### IDE/로컬 설정 ###
 .idea/
 *.iml
