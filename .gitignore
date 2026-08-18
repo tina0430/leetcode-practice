@@ -31,15 +31,11 @@ bin/
 ### Claude ###
 CLAUDE.md
 
-### 면접 준비 개인 파일 ###
-notes/english-reading.md
-notes/english-speaking.md
-notes/recap-log.md
+### 면접 준비 개인 파일 (영어 문서 폴더 전체 + 덱) ###
+notes/english/
 notes/review-deck.md
-notes/*-speaking-review.md
 ### 학습 설계 문서 (답이 들어 있거나 실패 이력이 근거인 것) ###
-notes/memorize-sheet.md
-notes/module-*.md
+notes/modules/
 ### IDE/로컬 설정 ###
 .idea/
 *.iml

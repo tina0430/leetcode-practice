@@ -15,7 +15,7 @@ src/
   common/      ListNode, TreeNode 등 공용 자료구조
   _template/   문제 풀이 템플릿
 tools/         glue code (스켈레톤 생성기 등)
-notes/         일일 공부 기록 (notes/YYYY-MM-DD.md, TEMPLATE.md 참고)
+notes/         공부 기록. daily/ 일일 노트(TEMPLATE.md 참고), concepts.md 개념, english/ 영어, modules/ 학습 모듈
 ```
 
 ## 문제 추가 방법
@@ -37,4 +37,4 @@ java -cp out problems.array.P0001TwoSum
 
 ## 기록
 
-풀고 나면 `notes/오늘날짜.md`에 문제·결과·배운 것·복습 목록을 기록한다.
+풀고 나면 `notes/daily/오늘날짜.md`에 문제·결과·배운 것·복습 목록을 기록한다.
