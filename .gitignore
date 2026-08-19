@@ -43,3 +43,5 @@ notes/modules/
 
 # IntelliJ 인덱스 파일
 identifier.sqlite
+### 학습 도구 DB (카드 답과 실패 이력) ###
+data/

@@ -472,6 +472,8 @@ for (int i = 0; i < n; i++) {
 | 125 | Valid Palindrome | 투 포인터 (양끝에서 좁히기), 문자열 정규화 | 08-14 |
 | 11 | Container With Most Water | 값을 키로 쓴 경계 인덱스 사전 계산 (TLE 1회 후 O(n+m)) | 08-15 |
 | 704 | Binary Search | 이진 탐색, 닫힌 구간 불변식 | 08-16 |
+| 268 | Missing Number | 합계 차이(가우스 합 n(n+1)/2에서 빼기), 공간 O(1). 대안 XOR | 08-18 |
+| 232 | Implement Queue using Stacks | 두 스택으로 큐 (in/out, out이 빌 때만 옮기는 지연 이동, amortized O(1)). 설계형, 힌트 후 | 08-18 |
 
 ## 13. 링크드 리스트 딥다이브 (2026-08-05 문답 8문항) ⭐
 
